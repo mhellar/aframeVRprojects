@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello, WebVR! - A-Frame</title>
+    <meta name="description" content="Hello, WebVR! - A-Frame">
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+    <script src="aframe-stl-model-component.js"></script>
+</head>
+
+<body>
+
+    <a-scene>
+        <a-assets>
+            <a-asset-item response-type="arraybuffer" id="core" src="core.stl"></a-asset-item>
+            <a-asset-item response-type="arraybuffer" id="spacer" src="spacer.stl"></a-asset-item>
+        </a-assets>
+        <a-entity stl-model="src: #core" scale="0.01 0.01 0.01" rotation="-90 0 0" position="0 0 -2" material="color: #f0f; roughness: 1; metalness: 0"></a-entity>
+        <a-entity stl-model="src: #spacer" scale="0.01 0.01 0.01" rotation="-90 0 0" position="1 0 -2" material="color: #f0f; roughness: 1; metalness: 0"></a-entity>
+    </a-scene>
+</body>
+
+</html>
